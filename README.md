@@ -67,3 +67,53 @@ Metrics used to quantitatively assess your submission will include:
 Your algorithms will be assessed against *unseen, future* price data of the same 100 instruments within the provided simulated trading universe.
 
 
+
+
+
+# How to use GitHub
+Check out my command [line cheat sheet](https://github.com/aserravalle/command-line-cheat-sheet/blob/main/README.md)
+
+**1. Navigate to the directory where you will store the code**
+
+Clone the repo if it doesn't exist
+```
+cd "C:\Users\Ariel\Google Drive\Personal\Extra Curricular\"
+git clone https://github.com/aserravalle/algothon21
+cd algothon21
+```
+or, if you've already cloned it
+```
+cd "C:\Users\Ariel\Google Drive\Personal\Extra Curricular\algothon21"
+```
+**2. Checkout (download) an existing branch, open in VS Code**
+
+Requires cloned repo. Always make sure your **local changes are pushed** before you run git pull
+```
+git pull
+git checkout main
+code .
+```
+
+**3. Run python virtual environment, install requirements**
+
+If you don't have the venv, run `pip install virtualenv`. 
+```
+python -m venv .
+Scripts\activate
+pip install -r requirements.txt
+```
+
+**4. Push changes to git**
+```
+git add .
+git commit -m "message"
+git push
+```
+You can use `git ls-files` after `git add .` to confirm your changes are ok. Or you can use `git commit -a -m "message"` if you want to add and commit in one go. 
+Make sure your commit message is informative. Sometimes this may fail because someone else has pushed changes to your branch already, e.g.:
+
+![image](https://user-images.githubusercontent.com/49396991/113241381-51653a80-92fa-11eb-8e61-1d5f5f1ca114.png)
+
+In this case, you must `git commit`, `git pull`, then `git push` again. There may be merge conflicts or other issues. If this happens, consult this meme
+
+![image](https://user-images.githubusercontent.com/49396991/113241555-ae60f080-92fa-11eb-8b44-a65859d6f832.png)
