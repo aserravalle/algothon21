@@ -2,7 +2,7 @@
 
 import numpy as np
 import pandas as pd
-from teamName import getMyPosition as getPosition
+from JH4 import getMyPosition as getPosition
 
 # Algorithm testing file. 
 # Quantitative judging will be determined from output of this program.
@@ -64,7 +64,7 @@ def calcPL(prcHist):
             ret = value / totDVolume
             frac0 = totDVolume0 / totDVolume
             frac1 = totDVolume1 / totDVolume
-        print ("Day %d value: %.2lf todayPL: $%.2lf $-traded: %.0lf return: %.5lf frac0: %.4lf frac1: %.4lf" % (t,value, todayPL, totDVolume, ret, frac0, frac1))
+        print ("Day %d | value: %.2lf | todayPL: $%.2lf | $-traded: %.0lf | return: %.5lf | frac0: %.4lf | frac1: %.4lf | comms: %.4lf" % (t,value, todayPL, totDVolume, ret, frac0, frac1, comm))
     pll = np.array(todayPLL)
     (plmu,plstd) = (np.mean(pll), np.std(pll))
     annSharpe = 0.0
