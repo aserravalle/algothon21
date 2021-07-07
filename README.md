@@ -90,7 +90,6 @@ cd "C:\Users\Ariel\Google Drive\Personal\Extra Curricular\algothon21"
 Requires cloned repo. Always make sure your **local changes are pushed** before you run git pull
 ```
 git pull
-git checkout main
 code .
 ```
 
